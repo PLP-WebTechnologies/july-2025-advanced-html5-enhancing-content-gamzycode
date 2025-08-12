@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form Page</title>
+</head>
+<body>
+
+    <header>
+        <h1>Web Page with Enhanced HTML5 Form</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>My Favorite Things</h2>
+            <h3>My Top Movies </h3>
+            <ol>
+                <li>Harry Potter</li>
+                <li>The Matrix</li>
+                <li>parasites</li>
+                <li>inception</li>
+            </ol>
+
+            <h3>Essential Development Tools </h3>
+            <ul>
+                <li>Git</li>
+                <li>Visual Studio Code</li>
+                <li>Docker</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Sample Data Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Stock</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Laptop</td>
+                        <td>$1200</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Monitor</td>
+                        <td>$350</td>
+                        <td>120</td>
+                    </tr>
+                    <tr>
+                        <td>Keyboard</td>
+                        <td>$75</td>
+                        <td>200</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Example Media</h2>
+            <img src="https://via.placeholder.com/600x300.png?text=Placeholder+Image" alt="A simple placeholder image for demonstration purposes">
+        </section>
+
+        <section>
+            <h2>Contact and Registration Form</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" placeholder="John Doe" required minlength="3">
+
+                    <label for="user-email">Email:</label>
+                    <input type="email" id="user-email" name="user-email" placeholder="john.doe@example.com" required autocomplete="email">
+
+                    <label for="user-tel">Phone Number:</label>
+                    <input type="tel" id="user-tel" name="user-tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <small>Format: 123-456-7890</small>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Order Details</legend>
+
+                    <label for="order-date">Preferred Date:</label>
+                    <input type="date" id="order-date" name="order-date" required>
+
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="100" value="1" required>
+
+                    <p>Subscription Type:</p>
+                    <label for="basic">Basic</label>
+                    <input type="radio" id="basic" name="subscription" value="basic" checked>
+                    
+                    <label for="premium">Premium</label>
+                    <input type="radio" id="premium" name="subscription" value="premium">
+
+                    <p>Notifications:</p>
+                    <label for="email-updates">Email Updates</label>
+                    <input type="checkbox" id="email-updates" name="updates" value="email" checked>
+
+                    <label for="text-updates">Text Updates</label>
+                    <input type="checkbox" id="text-updates" name="updates" value="text">
+
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Enter any additional comments here."></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Account Information</legend>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="johndoe123" required autocomplete="username">
+                    <small>Username must be at least 6 characters long.</small>
+
+                    <label for="user-password">Password:</label>
+                    <input type="password" id="user-password" name="user-password" required minlength="8" autocomplete="new-password">
+                    <small>Password must be at least 8 characters long.</small>
+
+                    <label for="read-only">Read-Only Field:</label>
+                    <input type="text" id="read-only" name="read-only" value="This field cannot be edited." readonly>
+                </fieldset>
+
+                <input type="submit" value="Submit Form">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Web Page. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
